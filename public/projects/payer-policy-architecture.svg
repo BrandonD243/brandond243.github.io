@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1020" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4B4B4B" />
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="1" y="1" width="1198" height="1018" rx="14" fill="#FFFFFF" stroke="#DEE1DA" stroke-width="2" />
+
+  <!-- header -->
+  <text x="40" y="34" font-size="12" letter-spacing="1.5" fill="#4B3621" font-weight="700">// ARCHITECTURE</text>
+  <text x="40" y="60" font-size="21" fill="#638919" font-weight="700">Payer-Policy Evidence Engine — RAG Architecture</text>
+  <line x1="40" y1="78" x2="1160" y2="78" stroke="#DEE1DA" stroke-width="1.5" />
+
+  <!-- legend -->
+  <g font-size="10.5" fill="#4B4B4B">
+    <rect x="660" y="38" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.5" />
+    <text x="676" y="47.5">Input</text>
+
+    <rect x="748" y="38" width="11" height="11" rx="2" fill="#EEF3E1" stroke="#638919" stroke-width="1.5" />
+    <text x="764" y="47.5">Retrieval (RAG)</text>
+
+    <rect x="878" y="38" width="11" height="11" rx="2" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.5" />
+    <text x="894" y="47.5">LLM Extraction</text>
+
+    <rect x="1000" y="38" width="11" height="11" rx="2" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.5" />
+    <text x="1016" y="47.5">Policy Logic</text>
+
+    <rect x="1000" y="56" width="11" height="11" rx="2" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.5" />
+    <text x="1016" y="65.5">Service / Output</text>
+  </g>
+
+  <!-- lane headers -->
+  <text x="290" y="100" font-size="12" letter-spacing="1" fill="#4B3621" font-weight="700" text-anchor="middle">POLICY INGESTION — RAG</text>
+  <text x="910" y="100" font-size="12" letter-spacing="1" fill="#4B3621" font-weight="700" text-anchor="middle">PATIENT DOCUMENT EXTRACTION</text>
+
+  <!-- ===== connectors (drawn first, under boxes) ===== -->
+  <g stroke="#4B4B4B" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="290" y1="170" x2="290" y2="193" />
+    <line x1="290" y1="250" x2="290" y2="273" />
+    <line x1="290" y1="330" x2="290" y2="353" />
+    <line x1="910" y1="170" x2="910" y2="193" />
+    <line x1="910" y1="245" x2="910" y2="268" />
+    <line x1="910" y1="350" x2="910" y2="373" />
+    <line x1="910" y1="445" x2="910" y2="468" />
+    <line x1="350" y1="450" x2="452" y2="648" />
+    <line x1="850" y1="520" x2="748" y2="648" />
+    <line x1="600" y1="745" x2="600" y2="768" />
+    <line x1="600" y1="835" x2="600" y2="858" />
+    <line x1="550" y1="925" x2="447" y2="948" />
+    <line x1="650" y1="925" x2="753" y2="948" />
+  </g>
+  <line x1="290" y1="450" x2="290" y2="478" stroke="#4B4B4B" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)" />
+
+  <!-- ===== LEFT LANE (policy / RAG) ===== -->
+  <!-- L1 input -->
+  <rect x="60" y="115" width="460" height="55" rx="10" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.6" />
+  <text x="290" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Payer Policy Documents</text>
+  <text x="290" y="155" text-anchor="middle" font-size="10.5" fill="#4B4B4B">ingested directly from payer websites</text>
+
+  <!-- L2 RAG -->
+  <rect x="60" y="195" width="460" height="55" rx="10" fill="#EEF3E1" stroke="#638919" stroke-width="1.6" />
+  <text x="290" y="218" text-anchor="middle" font-size="13" font-weight="700" fill="#3f5710">RAG Pipeline</text>
+  <text x="290" y="235" text-anchor="middle" font-size="10.5" fill="#4B4B4B">Chunk → Embed → Index</text>
+
+  <!-- L3 RAG -->
+  <rect x="60" y="275" width="460" height="55" rx="10" fill="#EEF3E1" stroke="#638919" stroke-width="1.6" />
+  <text x="290" y="298" text-anchor="middle" font-size="13" font-weight="700" fill="#3f5710">Retrieved Policy Passages</text>
+  <text x="290" y="315" text-anchor="middle" font-size="10.5" fill="#4B4B4B">traceable to the exact source text</text>
+
+  <!-- L4 policy model -->
+  <rect x="60" y="355" width="460" height="95" rx="10" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.6" />
+  <text x="290" y="388" text-anchor="middle" font-size="13" font-weight="700" fill="#4B3621">YAML Policy Model</text>
+  <text x="290" y="406" text-anchor="middle" font-size="10.5" fill="#4B4B4B">per payer + CPT code</text>
+  <text x="290" y="422" text-anchor="middle" font-size="10.5" fill="#4B4B4B">approval / exclusion clauses • AND/OR logic</text>
+  <text x="290" y="438" text-anchor="middle" font-size="10.5" fill="#4B4B4B">each clause linked back to its source passage</text>
+
+  <!-- Lc compiler (optional side path) -->
+  <rect x="60" y="480" width="460" height="95" rx="10" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.6" stroke-dasharray="6,4" />
+  <text x="290" y="513" text-anchor="middle" font-size="13" font-weight="700" fill="#4B3621">Compiler Stage (optional)</text>
+  <text x="290" y="531" text-anchor="middle" font-size="10.5" fill="#4B4B4B">flattens per-payer YAML into static JSON</text>
+  <text x="290" y="547" text-anchor="middle" font-size="10.5" fill="#4B4B4B">knowledge graphs for faster lookup —</text>
+  <text x="290" y="563" text-anchor="middle" font-size="10.5" fill="#4B4B4B">authoring stays in YAML either way</text>
+
+  <!-- ===== RIGHT LANE (LLM extraction) ===== -->
+  <!-- R1 input -->
+  <rect x="680" y="115" width="460" height="55" rx="10" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.6" />
+  <text x="910" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Incoming Patient Document</text>
+  <text x="910" y="155" text-anchor="middle" font-size="10.5" fill="#4B4B4B">submitted for prior-authorization review</text>
+
+  <!-- R2 input -->
+  <rect x="680" y="195" width="460" height="50" rx="10" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.6" />
+  <text x="910" y="225" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Split into Sections</text>
+
+  <!-- R3 LLM -->
+  <rect x="680" y="270" width="460" height="80" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="910" y="296" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">LLM Extraction — gpt-4o-mini</text>
+  <text x="910" y="314" text-anchor="middle" font-size="10.5" fill="#4B4B4B">concept mentions as exact text spans</text>
+  <text x="910" y="330" text-anchor="middle" font-size="10.5" fill="#4B4B4B">+ a confidence score &amp; certainty level</text>
+
+  <!-- R4 guardrail -->
+  <rect x="680" y="375" width="460" height="70" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="910" y="398" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">Keyword Re-validation Guardrail</text>
+  <text x="910" y="416" text-anchor="middle" font-size="10.5" fill="#4B4B4B">span re-checked against that concept's own</text>
+  <text x="910" y="432" text-anchor="middle" font-size="10.5" fill="#4B4B4B">keyword indicators before acceptance</text>
+
+  <!-- R5 validated -->
+  <rect x="680" y="470" width="460" height="50" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="910" y="500" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">Validated Concept Mentions</text>
+
+  <!-- ===== CENTER MERGE ===== -->
+  <!-- C1 clause evaluator -->
+  <rect x="310" y="650" width="580" height="95" rx="10" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.6" />
+  <text x="600" y="683" text-anchor="middle" font-size="14" font-weight="700" fill="#4B3621">Clause Evaluator</text>
+  <text x="600" y="701" text-anchor="middle" font-size="10.5" fill="#4B4B4B">matches validated concepts against each clause's required / exclusion concepts</text>
+  <text x="600" y="717" text-anchor="middle" font-size="10.5" fill="#4B4B4B">under AND/OR logic → satisfied / partial / unsatisfied</text>
+
+  <!-- C2 coverage check -->
+  <rect x="310" y="770" width="580" height="65" rx="10" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.6" />
+  <text x="600" y="798" text-anchor="middle" font-size="13" font-weight="700" fill="#4B3621">Coverage / PA-Required Check</text>
+  <text x="600" y="815" text-anchor="middle" font-size="10.5" fill="#4B4B4B">→ single Covered / Not Covered decision</text>
+
+  <!-- C3 FastAPI -->
+  <rect x="310" y="860" width="580" height="65" rx="10" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.6" />
+  <text x="600" y="888" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">FastAPI Service</text>
+  <text x="600" y="905" text-anchor="middle" font-size="10.5" fill="#4B4B4B">returns decision + retrieved clause text + evidence spans</text>
+
+  <!-- C4 outputs -->
+  <rect x="310" y="950" width="270" height="55" rx="10" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.6" />
+  <text x="445" y="973" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">PDF Packet</text>
+  <text x="445" y="990" text-anchor="middle" font-size="10.5" fill="#4B4B4B">submission-ready</text>
+
+  <rect x="620" y="950" width="270" height="55" rx="10" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.6" />
+  <text x="755" y="973" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Email Delivery</text>
+  <text x="755" y="990" text-anchor="middle" font-size="10.5" fill="#4B4B4B">automated routing</text>
+</svg>

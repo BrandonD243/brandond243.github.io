@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 810" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4B4B4B" />
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect x="1" y="1" width="1198" height="808" rx="14" fill="#FFFFFF" stroke="#DEE1DA" stroke-width="2" />
+
+  <!-- header -->
+  <text x="40" y="34" font-size="12" letter-spacing="1.5" fill="#4B3621" font-weight="700">// ARCHITECTURE</text>
+  <text x="40" y="60" font-size="21" fill="#638919" font-weight="700">Healthcare Document Parsing &amp; OCR Pipeline</text>
+  <line x1="40" y1="78" x2="1160" y2="78" stroke="#DEE1DA" stroke-width="1.5" />
+
+  <!-- legend -->
+  <g font-size="10.5" fill="#4B4B4B">
+    <rect x="610" y="38" width="11" height="11" rx="2" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.5" />
+    <text x="626" y="47.5">Input</text>
+
+    <rect x="690" y="38" width="11" height="11" rx="2" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.5" />
+    <text x="706" y="47.5">Extraction</text>
+
+    <rect x="800" y="38" width="11" height="11" rx="2" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.5" />
+    <text x="816" y="47.5">Parsing &amp; Validation</text>
+
+    <rect x="610" y="56" width="11" height="11" rx="2" fill="#EEF3E1" stroke="#638919" stroke-width="1.5" />
+    <text x="626" y="65.5">Review Loop</text>
+
+    <rect x="740" y="56" width="11" height="11" rx="2" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.5" />
+    <text x="756" y="65.5">Output / Storage</text>
+  </g>
+
+  <!-- lane headers -->
+  <text x="290" y="100" font-size="12" letter-spacing="1" fill="#4B3621" font-weight="700" text-anchor="middle">SCANNED / IMAGE PATH</text>
+  <text x="910" y="100" font-size="12" letter-spacing="1" fill="#4B3621" font-weight="700" text-anchor="middle">NATIVE-TEXT PATH</text>
+
+  <!-- ===== connectors (drawn first, under boxes) ===== -->
+  <g stroke="#4B4B4B" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="290" y1="170" x2="290" y2="193" />
+    <line x1="290" y1="255" x2="290" y2="278" />
+    <line x1="910" y1="170" x2="910" y2="193" />
+    <line x1="910" y1="255" x2="910" y2="278" />
+    <line x1="350" y1="335" x2="455" y2="428" />
+    <line x1="850" y1="335" x2="745" y2="428" />
+    <line x1="600" y1="510" x2="600" y2="533" />
+    <line x1="600" y1="600" x2="600" y2="623" />
+    <line x1="600" y1="690" x2="600" y2="708" />
+  </g>
+  <g stroke="#4B4B4B" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#arrow)">
+    <line x1="890" y1="567" x2="947" y2="567" />
+    <line x1="953" y1="642" x2="892" y2="659" />
+  </g>
+
+  <!-- ===== LEFT LANE (scanned / OCR) ===== -->
+  <!-- LA1 input -->
+  <rect x="60" y="115" width="460" height="55" rx="10" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.6" />
+  <text x="290" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Document in MinIO</text>
+  <text x="290" y="155" text-anchor="middle" font-size="10.5" fill="#4B4B4B">scanned or image-based PDF</text>
+
+  <!-- LA2 OCR -->
+  <rect x="60" y="195" width="460" height="60" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="290" y="220" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">OCR — pytesseract</text>
+  <text x="290" y="238" text-anchor="middle" font-size="10.5" fill="#4B4B4B">extracts raw text from image pages</text>
+
+  <!-- LA3 OCR text output -->
+  <rect x="60" y="280" width="460" height="55" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="290" y="303" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">OCR Text Output</text>
+  <text x="290" y="320" text-anchor="middle" font-size="10.5" fill="#4B4B4B">raw extracted text, no layout structure</text>
+
+  <!-- ===== RIGHT LANE (native text) ===== -->
+  <!-- RA1 input -->
+  <rect x="680" y="115" width="460" height="55" rx="10" fill="#FFFFFF" stroke="#5B6470" stroke-width="1.6" />
+  <text x="910" y="138" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Document in MinIO</text>
+  <text x="910" y="155" text-anchor="middle" font-size="10.5" fill="#4B4B4B">native text-layer PDF</text>
+
+  <!-- RA2 text extraction -->
+  <rect x="680" y="195" width="460" height="60" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="910" y="220" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">Text Extraction — pdfplumber</text>
+  <text x="910" y="238" text-anchor="middle" font-size="10.5" fill="#4B4B4B">reads the existing text layer directly</text>
+
+  <!-- RA3 extracted text output -->
+  <rect x="680" y="280" width="460" height="55" rx="10" fill="#E9F2F1" stroke="#1F5F5B" stroke-width="1.6" />
+  <text x="910" y="303" text-anchor="middle" font-size="13" font-weight="700" fill="#1F5F5B">Extracted Text Output</text>
+  <text x="910" y="320" text-anchor="middle" font-size="10.5" fill="#4B4B4B">raw extracted text, no layout structure</text>
+
+  <!-- ===== CENTER MERGE ===== -->
+  <!-- C1 field parser -->
+  <rect x="310" y="430" width="580" height="80" rx="10" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.6" />
+  <text x="600" y="463" text-anchor="middle" font-size="14" font-weight="700" fill="#4B3621">Field Parser (rule-based)</text>
+  <text x="600" y="481" text-anchor="middle" font-size="10.5" fill="#4B4B4B">pulls IDs, dates, patient fields &amp; line items</text>
+  <text x="600" y="497" text-anchor="middle" font-size="10.5" fill="#4B4B4B">into a structured JSON payload</text>
+
+  <!-- C2 schema validation gate -->
+  <rect x="310" y="535" width="580" height="65" rx="10" fill="#F1EAE0" stroke="#4B3621" stroke-width="1.6" />
+  <text x="600" y="563" text-anchor="middle" font-size="13" font-weight="700" fill="#4B3621">JSON Schema Validation Gate</text>
+  <text x="600" y="580" text-anchor="middle" font-size="10.5" fill="#4B4B4B">must pass schema + confidence threshold to proceed</text>
+
+  <!-- Review loop (fail / low-confidence path) -->
+  <rect x="950" y="535" width="210" height="110" rx="10" fill="#EEF3E1" stroke="#638919" stroke-width="1.6" stroke-dasharray="6,4" />
+  <text x="1055" y="568" text-anchor="middle" font-size="13" font-weight="700" fill="#3f5710">Label Studio Review</text>
+  <text x="1055" y="586" text-anchor="middle" font-size="10.5" fill="#4B4B4B">reviews failed / low-</text>
+  <text x="1055" y="602" text-anchor="middle" font-size="10.5" fill="#4B4B4B">confidence extractions —</text>
+  <text x="1055" y="618" text-anchor="middle" font-size="10.5" fill="#4B4B4B">corrected records flow back in</text>
+
+  <!-- C3 postgres output -->
+  <rect x="310" y="625" width="580" height="65" rx="10" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.6" />
+  <text x="600" y="653" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">PostgreSQL — Structured Output</text>
+  <text x="600" y="670" text-anchor="middle" font-size="10.5" fill="#4B4B4B">validated + human-corrected records</text>
+
+  <!-- C4 downstream services -->
+  <rect x="310" y="710" width="580" height="55" rx="10" fill="#F2F2F0" stroke="#4B4B4B" stroke-width="1.6" />
+  <text x="600" y="733" text-anchor="middle" font-size="13" font-weight="700" fill="#12161A">Downstream Services</text>
+  <text x="600" y="750" text-anchor="middle" font-size="10.5" fill="#4B4B4B">consume structured, reviewable records</text>
+</svg>

@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    zoom: 95%;
+  }
+
+  body {
+    @apply text-ink font-body antialiased;
+    background-color: #b3db95;
+    font-feature-settings: "ss01" 1;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  html.dark body {
+    @apply text-paper;
+    background-color: #b3db95;
+  }
+
+  ::selection {
+    @apply bg-amber-400/40;
+  }
+
+  :focus-visible {
+    outline: 2px solid #1f5f5b;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  html.dark :focus-visible {
+    outline-color: #4fa39b;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer components {
+  .doodle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    pointer-events: none;
+    height: auto;
+    user-select: none;
+    filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.12));
+    will-change: transform;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.14em] uppercase;
+    color: #4B3621;
+  }
+
+  .section-shell {
+    @apply mx-auto max-w-content px-6 sm:px-8 lg:px-10;
+  }
+
+  .hairline {
+    @apply border-line-light dark:border-line-dark;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-[3px] px-5 py-3 text-sm font-medium transition-all duration-200 focus-visible:outline-offset-4;
+  }
+
+  .btn-primary {
+    @apply btn bg-ink text-paper hover:bg-teal-700 dark:bg-paper dark:text-ink dark:hover:bg-teal-200;
+  }
+
+  .btn-secondary {
+    @apply btn border border-[#E08A3E] bg-transparent text-[#E08A3E] hover:opacity-75;
+  }
+
+  .btn-ghost {
+    @apply btn text-slate-light hover:text-ink dark:text-slate-dark dark:hover:text-paper px-3;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-[3px] border border-line-light bg-transparent px-2.5 py-1 font-mono text-[11px] tracking-wide text-slate-light dark:border-[#F5F6F3]/40 dark:text-[#F5F6F3]/80;
+  }
+
+  .card {
+    @apply rounded-[4px] border border-line-light bg-paper-raised dark:border-line-dark dark:bg-[#4B3621];
+  }
+
+  .placeholder-note {
+    @apply rounded-[3px] border border-dashed border-amber-500/60 bg-amber-400/10 px-3 py-2 font-mono text-[11px] leading-relaxed text-amber-500;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
