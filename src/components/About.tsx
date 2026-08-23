@@ -6,32 +6,36 @@ export default function About() {
       <SectionHeading
         eyebrow="// about"
         title="Who Am I?"
-        description="A constantly evolving description of myself."
+        description=""
       />
-
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-4 text-[15px] leading-relaxed" style={{ color: "#4B4B4B" }}>
           <p>
-            I'm a computer science graduate based in New York City with a focus on
-            building AI systems that solve real operational problems — not just
-            models that perform well in a notebook, but systems that hold up in
-            production and make someone's actual workflow easier.
+            Hello! I'm a computer scientist based in New York City with a focus in 
+            data, machine learning, and AI ethics.
           </p>
           <p>
-            Most of my hands-on experience comes from healthcare document
-            intelligence: taking unstructured prior-authorization paperwork and
-            turning it into structured, reviewable data that clinical and
-            operations teams can act on quickly. That work sits at the
-            intersection of machine learning, backend engineering, and plain
-            practical problem-solving.
+            Logic and emotion has been one of the most prominent themes in my life.
+            When choosing what to do with my career, I was split between the arts and technology,
+            both which I've loved since I was little. Now, I'm currently living a life in between
+            performance artistry and engineering. 
           </p>
           <p>
-            I care about shipping things that work, understanding the business
-            problem behind a feature request, and learning continuously — new
-            tools, new techniques, and better ways to build reliable systems. I
-            also enjoy collaborating closely with both technical and
-            cross-functional teams, since the best version of a system usually
-            comes from understanding how it's actually going to be used.
+            It currently shows up the most in my career the more I'm building and working with 
+            automated systems. One of my favorite things about building AI is how unpredictable 
+            it is when it comes to it's current outputs and it's implications for the future.
+            Where we started is nowhere near where we are now, and the technology only keeps
+            getting smarter. Being a contributer to these technological developments is like 
+            raising a small child and watching it evolve in real-time. The unpredictability
+            and power of these systems are growing beyond our human capabilities, and yet they
+            somehow circle back to being human just like us.
+          </p>
+          <p>
+            I use my background to help people of all industries, but where I find it most interesting
+            is when I use it to help the pillars of our communities. Healthcare professionals, teachers, 
+            and small business owners are only a few examples of people who keep our world spinning.
+            I want to come up with solutions that can help maximize their potential and enhance their
+            impact on the people they serve.
           </p>
         </div>
 
