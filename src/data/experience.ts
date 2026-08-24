@@ -67,10 +67,11 @@ export const experience: ExperienceEntry[] = [
     location: "New York City, NY",
     dateRange: "April 2023 — May 2024",
     summary:
-      "Building eco-friendly healthcare document-intelligence systems that help clinical and operations teams move prior-authorization requests through review faster and with fewer manual touchpoints.",
+      "A 13-month Break Through Tech AI Fellowship combining a 12-week machine learning foundations curriculum with real-world applied placements, including an AI/ML Fellow role at Google.",
     highlights: [
-      "Selected from 1500+ applicants to participate in a 12-week intensive AI fellowship program.",
+      "Selected from 1,500+ applicants for the fellowship, which opened with a 12-week intensive machine learning foundations curriculum.",
       "Gained professional experience working with companies on real-life machine learning projects, including data collection, model development, and deployment.",
+      "Fellowship placements included an AI/ML Fellow role at Google and an applied machine learning project with the New York Botanical Garden (NYBG).",
     ],
     stack: [
       "Python",
@@ -90,9 +91,9 @@ export const experience: ExperienceEntry[] = [
     location: "New York City, NY",
     dateRange: "August 2023 — December 2023",
     summary:
-      "Worked with 5 engineers to develop a supervised deep-learning regression model predicting CTR for Google's ad campaigns using abstracted data.",
+      "Worked with 5 engineers to develop a supervised deep-learning regression model — using a convolutional neural network (CNN) architecture and Scikit-Learn-based analysis, built with TensorFlow and Keras — predicting CTR for Google's ad campaigns using abstracted data.",
     highlights: [
-      "Achieved an 80% accuracy rate using Python libraries such as TensorFlow and Keras.",
+      "Achieved an 85% accuracy rate using Python libraries including TensorFlow, Keras, and Scikit-Learn.",
       "Implemented testing, validation, and hyperparameter tuning to optimize model performance.",
       "Partnered with stakeholders to define problem scope and determine appropriate ML approaches.",
     ],
@@ -103,6 +104,7 @@ export const experience: ExperienceEntry[] = [
       "NumPy",
       "Pandas",
       "ScikitLearn",
+      "CNN",
       "Deep Neural Networks",
     ],
     category: "technical",

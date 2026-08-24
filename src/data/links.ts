@@ -14,5 +14,5 @@ export const links = {
   // Path to the resume file. Drop your PDF into /public/resume/ with this
   // exact filename, or update the path here.
   resumeUrl: "/resume/Brandon-Downer-Resume.pdf",
-  resumeUpdated: "TODO: add last-updated month/year",
+  resumeUpdated: "August 2026",
 };
