@@ -26,42 +26,57 @@ export default function CaseStudy() {
         <ArrowLeft size={14} /> Back to projects
       </Link>
 
-      <header className="mt-8 max-w-[70ch] border-b hairline pb-10">
-        <p className="eyebrow mb-3">// case study</p>
-        <h1 className="text-3xl font-semibold text-[#4B3621] sm:text-4xl">{project.title}</h1>
-        <p className="mt-4 text-[15px] leading-relaxed text-[#4B4B4B]">
-          {cs.overview}
-        </p>
+      <header className="mt-8 border-b hairline pb-10">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+          <div>
+            <p className="eyebrow mb-3">// case study</p>
+            <h1 className="text-3xl font-semibold text-[#4B3621] sm:text-4xl">{project.title}</h1>
+            <p className="mt-4 text-[15px] leading-relaxed text-[#4B4B4B]">
+              {cs.overview}
+            </p>
 
-        <div className="mt-5 flex flex-wrap gap-2">
-          {project.tags.map((t) => (
-            <span
-              key={t}
-              className="tag"
-              style={{ backgroundColor: "#4B3621", borderColor: "#4B3621", color: "rgba(245,246,243,0.8)" }}
-            >
-              {t}
-            </span>
-          ))}
-        </div>
+            <div className="mt-5 flex flex-wrap gap-2">
+              {project.tags.map((t) => (
+                <span
+                  key={t}
+                  className="tag"
+                  style={{ backgroundColor: "#4B3621", borderColor: "#4B3621", color: "rgba(245,246,243,0.8)" }}
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          {project.links.length > 0 ? (
-            project.links.map((l) => (
-              <a
-                key={l.url}
-                href={l.url}
-                target="_blank"
-                rel="noreferrer"
-                className="btn border border-[#4B3621] bg-transparent text-[#4B3621] hover:opacity-75"
-              >
-                <Github size={15} /> {l.label}
-              </a>
-            ))
+            <div className="mt-6 flex flex-wrap gap-3">
+              {project.links.length > 0 ? (
+                project.links.map((l) => (
+                  <a
+                    key={l.url}
+                    href={l.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn border border-[#4B3621] bg-transparent text-[#4B3621] hover:opacity-75"
+                  >
+                    <Github size={15} /> {l.label}
+                  </a>
+                ))
+              ) : (
+                <span className="font-mono text-xs text-slate-light dark:text-slate-dark">
+                  Repository / demo link coming soon
+                </span>
+              )}
+            </div>
+          </div>
+
+          {cs.screenshotUrl ? (
+            <div className="overflow-hidden rounded-[6px] border hairline shadow-[0_12px_40px_rgba(0,0,0,0.18)]">
+              <img src={cs.screenshotUrl} alt={`${project.title} screenshot`} className="w-full" />
+            </div>
           ) : (
-            <span className="font-mono text-xs text-slate-light dark:text-slate-dark">
-              Repository / demo link coming soon
-            </span>
+            <div className="flex h-56 flex-col items-center justify-center gap-2 rounded-[6px] border border-dashed hairline text-slate-light dark:text-slate-dark">
+              <ImageOff size={24} strokeWidth={1.5} />
+              <p className="px-4 text-center font-mono text-[11px]">Screenshot placeholder — add to /public/projects/</p>
+            </div>
           )}
         </div>
       </header>
@@ -122,17 +137,6 @@ export default function CaseStudy() {
               ))}
             </div>
           </div>
-
-          {cs.screenshotUrl ? (
-            <div className="overflow-hidden rounded-[4px] border hairline">
-              <img src={cs.screenshotUrl} alt={`${project.title} screenshot`} className="w-full" />
-            </div>
-          ) : (
-            <div className="flex h-40 flex-col items-center justify-center gap-2 rounded-[4px] border border-dashed hairline text-slate-light dark:text-slate-dark">
-              <ImageOff size={20} strokeWidth={1.5} />
-              <p className="px-4 text-center font-mono text-[11px]">Screenshot placeholder — add to /public/projects/</p>
-            </div>
-          )}
         </aside>
       </div>
 
