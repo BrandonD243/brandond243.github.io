@@ -21,7 +21,7 @@ export default function CaseStudy() {
     <main id="main-content" className="section-shell py-16 sm:py-20">
       <Link
         to="/#projects"
-        className="inline-flex items-center gap-2 font-mono text-xs text-[#4B3621] hover:text-teal-700 dark:hover:text-teal-400"
+        className="inline-flex items-center gap-2 font-mono text-xs text-[#638919] transition-colors hover:text-[#4B3621]"
       >
         <ArrowLeft size={14} /> Back to projects
       </Link>
@@ -137,10 +137,10 @@ export default function CaseStudy() {
       </div>
 
       <div className="mt-16 flex items-center justify-between border-t hairline pt-8">
-        <span className="font-mono text-xs text-[#4B3621]">Next case study</span>
+        <span className="font-mono text-xs text-[#638919] transition-colors hover:text-[#4B3621]">Next case study</span>
         <Link
           to={`/projects/${next.slug}`}
-          className="inline-flex items-center gap-2 font-medium text-[#4B3621] hover:text-teal-700 dark:hover:text-teal-400"
+          className="inline-flex items-center gap-2 font-medium text-[#638919] transition-colors hover:text-[#4B3621]"
         >
           {next.title} <ArrowUpRight size={15} />
         </Link>
