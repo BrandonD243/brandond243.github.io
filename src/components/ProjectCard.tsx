@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               href={l.url}
               target="_blank"
               rel="noreferrer"
-              className="btn-ghost !px-2 text-xs"
+              className="btn text-[#F5F6F3]/70 hover:text-ink dark:hover:text-paper !px-2 text-xs"
             >
               <Github size={13} /> {l.label}
             </a>

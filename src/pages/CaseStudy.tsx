@@ -123,10 +123,16 @@ export default function CaseStudy() {
             </div>
           </div>
 
-          <div className="flex h-40 flex-col items-center justify-center gap-2 rounded-[4px] border border-dashed hairline text-slate-light dark:text-slate-dark">
-            <ImageOff size={20} strokeWidth={1.5} />
-            <p className="px-4 text-center font-mono text-[11px]">Screenshot placeholder — add to /public/projects/</p>
-          </div>
+          {cs.screenshotUrl ? (
+            <div className="overflow-hidden rounded-[4px] border hairline">
+              <img src={cs.screenshotUrl} alt={`${project.title} screenshot`} className="w-full" />
+            </div>
+          ) : (
+            <div className="flex h-40 flex-col items-center justify-center gap-2 rounded-[4px] border border-dashed hairline text-slate-light dark:text-slate-dark">
+              <ImageOff size={20} strokeWidth={1.5} />
+              <p className="px-4 text-center font-mono text-[11px]">Screenshot placeholder — add to /public/projects/</p>
+            </div>
+          )}
         </aside>
       </div>
 

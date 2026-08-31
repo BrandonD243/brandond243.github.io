@@ -32,6 +32,7 @@ export interface Project {
     challenges: string;
     hasDiagramPlaceholder: boolean;
     diagramUrl?: string; // path under /public — overrides the placeholder box when set
+    screenshotUrl?: string; // path under /public — overrides the screenshot placeholder box when set
   };
 }
 
@@ -75,6 +76,7 @@ export const projects: Project[] = [
         "Payer requirements change constantly, and hand-maintained policy YAML couldn't keep up on its own — that gap is what drove the move to RAG, so clause language stays grounded in the payer's current source document instead of a stale transcription. Running the LLM extraction as a single call against a whole document also created high latency and let details get lost; splitting extraction into multiple smaller calls (one per document section) fixed both problems at once, cutting latency and improving accuracy by giving the model less to track per call. Just as important was hearing directly from the reviewers who'd actually use this — their day-to-day friction points shaped which parts of the workflow were worth building first.",
       hasDiagramPlaceholder: true,
       diagramUrl: "/projects/payer-policy-architecture.svg",
+      screenshotUrl: "/projects/payer-policy-evidence-engine.jpeg",
     },
   },
   {
