@@ -121,6 +121,7 @@ export const projects: Project[] = [
         "Two things stood out. First, picking an OCR engine wasn't a reputation call — it took actually benchmarking candidates against our own scanned document set and comparing accuracy before landing on Tesseract, which had the added benefit of running self-hosted instead of sending scans to a third-party cloud OCR API. Second, staying HIPAA-compliant meant deciding how to protect PHI that's inevitably visible during OCR debugging and human review. Hashing was the easy option, but a hash can't be visually reviewed or corrected — a reviewer needs something that looks like a real name or date of birth to judge whether the parser got it right. We abstracted real fields into synthetic, realistic-looking values for anything a person or downstream process would see, and restored the original data only when output was returned to the source system. That trade-off cuts both ways: unlike an irreversible hash, the synthetic-to-real mapping is itself a sensitive asset that has to be tightly access-controlled and audited, since anyone who can read it can reverse the substitution.",
       hasDiagramPlaceholder: true,
       diagramUrl: "/projects/healthcare-ocr-architecture.svg",
+      screenshotUrl: "/projects/document-parsing-ocr.jpeg",
     },
   },
 ];
