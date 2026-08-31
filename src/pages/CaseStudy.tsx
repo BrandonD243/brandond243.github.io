@@ -21,7 +21,7 @@ export default function CaseStudy() {
     <main id="main-content" className="section-shell py-16 sm:py-20">
       <Link
         to="/#projects"
-        className="inline-flex items-center gap-2 font-mono text-xs text-slate-light hover:text-teal-700 dark:text-slate-dark dark:hover:text-teal-400"
+        className="inline-flex items-center gap-2 font-mono text-xs text-[#4B3621] hover:text-teal-700 dark:hover:text-teal-400"
       >
         <ArrowLeft size={14} /> Back to projects
       </Link>
@@ -48,7 +48,13 @@ export default function CaseStudy() {
         <div className="mt-6 flex flex-wrap gap-3">
           {project.links.length > 0 ? (
             project.links.map((l) => (
-              <a key={l.url} href={l.url} target="_blank" rel="noreferrer" className="btn-secondary">
+              <a
+                key={l.url}
+                href={l.url}
+                target="_blank"
+                rel="noreferrer"
+                className="btn border border-[#4B3621] bg-transparent text-[#4B3621] hover:opacity-75"
+              >
                 <Github size={15} /> {l.label}
               </a>
             ))
@@ -105,7 +111,7 @@ export default function CaseStudy() {
 
         <aside className="h-fit space-y-6 lg:sticky lg:top-24">
           <div className="card p-6">
-            <h3 className="font-mono text-[11px] uppercase tracking-wide text-slate-light dark:text-slate-dark">
+            <h3 className="font-mono text-[11px] uppercase tracking-wide text-[#F5F6F3]/70">
               Technologies
             </h3>
             <div className="mt-3 flex flex-wrap gap-2">
@@ -125,7 +131,7 @@ export default function CaseStudy() {
       </div>
 
       <div className="mt-16 flex items-center justify-between border-t hairline pt-8">
-        <span className="font-mono text-xs text-slate-light dark:text-slate-dark">Next case study</span>
+        <span className="font-mono text-xs text-[#4B3621]">Next case study</span>
         <Link
           to={`/projects/${next.slug}`}
           className="inline-flex items-center gap-2 font-medium text-[#4B3621] hover:text-teal-700 dark:hover:text-teal-400"
