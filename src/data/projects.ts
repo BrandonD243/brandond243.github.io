@@ -44,7 +44,7 @@ export const projects: Project[] = [
     tags: ["Python", "FastAPI", "RAG", "LLM Extraction", "YAML Policy Modeling", "PDF Generation"],
     status: "case-study",
     links: [
-      // TODO: add a GitHub or demo link once the repo is ready to share publicly.
+      { label: "GitHub", url: "https://github.com/BrandonD243/payer-policy-evidence-engine" },
     ],
     caseStudy: {
       overview:
@@ -84,7 +84,9 @@ export const projects: Project[] = [
       "Turns scanned clinical and payer documents into structured, reviewable fields instead of flat images or raw text.",
     tags: ["OCR", "Python", "Label Studio", "Data Pipelines"],
     status: "case-study",
-    links: [],
+    links: [
+      { label: "GitHub", url: "https://github.com/BrandonD243/clinical-reasoning-engine" },
+    ],
     caseStudy: {
       overview:
         "A document-processing pipeline that takes scanned or exported healthcare documents and extracts the structured fields — patient, procedure, and policy details — needed downstream, using OCR combined with layout-aware parsing.",

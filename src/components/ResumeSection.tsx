@@ -14,7 +14,7 @@ export default function ResumeSection() {
           </div>
           <div>
             <p className="font-medium">Brandon Downer — Resume</p>
-            <p className="mt-1 font-mono text-xs text-slate-light dark:text-slate-dark">
+            <p className="mt-1 font-mono text-xs text-[#F5F6F3]/70">
               PDF · Last updated: {links.resumeUpdated}
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function ResumeSection() {
         <a
           href={links.resumeUrl}
           download
-          className="btn shrink-0 border border-[#F5F6F3] bg-transparent text-[#F5F6F3] hover:opacity-75"
+          className="btn shrink-0 border border-[#F5F6F3] bg-transparent text-[#F5F6F3] transition-colors hover:border-[#E08A3E] hover:text-[#E08A3E]"
         >
           <Download size={15} /> Download Resume
         </a>

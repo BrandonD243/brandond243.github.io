@@ -11,21 +11,21 @@ export default function About() {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-4 text-[15px] leading-relaxed" style={{ color: "#4B4B4B" }}>
           <p>
-            Hello! I'm a computer scientist based in New York City with a focus in 
+            Hello! I'm a computer scientist based in New York City with a focus on
             data, machine learning, and AI ethics.
           </p>
           <p>
-            Logic and emotion has been one of the most prominent themes in my life.
+            Logic and emotion have been one of the most prominent themes in my life.
             When choosing what to do with my career, I was split between the arts and technology,
-            both which I've loved since I was little. Now, I'm currently living a life in between
-            performance artistry and engineering. 
+            both of which I've loved since I was little. Now, I'm currently living a life in between
+            performance artistry and engineering.
           </p>
           <p>
-            It currently shows up the most in my career the more I'm building and working with 
-            automated systems. One of my favorite things about building AI is how unpredictable 
-            it is when it comes to it's current outputs and it's implications for the future.
+            It currently shows up the most in my career the more I'm building and working with
+            automated systems. One of my favorite things about building AI is how unpredictable
+            it is when it comes to its current outputs and its implications for the future.
             Where we started is nowhere near where we are now, and the technology only keeps
-            getting smarter. Being a contributer to these technological developments is like 
+            getting smarter. Being a contributor to these technological developments is like
             raising a small child and watching it evolve in real-time. The unpredictability
             and power of these systems are growing beyond our human capabilities, and yet they
             somehow circle back to being human just like us.

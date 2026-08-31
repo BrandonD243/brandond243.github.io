@@ -28,7 +28,7 @@ export default function Contact() {
       <SectionHeading
         eyebrow="// contact"
         title="Get in touch"
-        description="Open to entry-level and early-career roles in AI, machine learning, and software engineering. The form below opens a pre-filled email — nothing is stored or sent to a server."
+        description="I'm always interested in hearing about other people's missions and how I can help! Let's connect."
       />
 
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_0.7fr]">
@@ -51,7 +51,7 @@ export default function Contact() {
             onChange={handleChange("company")}
           />
           <div>
-            <label htmlFor="message" className="mb-1.5 block font-mono text-[11px] uppercase tracking-wide text-slate-light dark:text-slate-dark">
+            <label htmlFor="message" className="mb-1.5 block font-mono text-[11px] uppercase tracking-wide text-[#4B3621]">
               Message
             </label>
             <textarea
@@ -71,7 +71,7 @@ export default function Contact() {
         <div className="card h-fit space-y-4 p-6">
           <a
             href={`mailto:${links.email}`}
-            className="flex items-center gap-3 text-sm hover:text-teal-700 dark:hover:text-teal-400"
+            className="flex items-center gap-3 text-sm transition-colors duration-500 hover:text-[#E08A3E]"
           >
             <Mail size={16} /> {links.email}
           </a>
@@ -79,7 +79,7 @@ export default function Contact() {
             href={links.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 text-sm hover:text-teal-700 dark:hover:text-teal-400"
+            className="flex items-center gap-3 text-sm transition-colors duration-500 hover:text-[#E08A3E]"
           >
             <Linkedin size={16} /> LinkedIn
           </a>
@@ -87,11 +87,11 @@ export default function Contact() {
             href={links.github}
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 text-sm hover:text-teal-700 dark:hover:text-teal-400"
+            className="flex items-center gap-3 text-sm transition-colors duration-500 hover:text-[#E08A3E]"
           >
             <Github size={16} /> GitHub
           </a>
-          <p className="pt-2 font-mono text-[11px] text-slate-light dark:text-slate-dark">
+          <p className="pt-2 font-mono text-[11px] text-[#F5F6F3]/70">
             {links.location}
           </p>
         </div>
@@ -117,7 +117,7 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={id} className="mb-1.5 block font-mono text-[11px] uppercase tracking-wide text-slate-light dark:text-slate-dark">
+      <label htmlFor={id} className="mb-1.5 block font-mono text-[11px] uppercase tracking-wide text-[#4B3621]">
         {label}
       </label>
       <input
