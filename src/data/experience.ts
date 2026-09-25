@@ -17,20 +17,20 @@ export interface ExperienceEntry {
 
 export const experience: ExperienceEntry[] = [
   {
-    role: "ML & Data Engineer",
+    role: "AI Product Engineer",
     company: "Caldarium",
     location: "Albany, NY (Remote)",
     dateRange: "September 2025 — Present",
     summary:
       "Building eco-friendly healthcare document-intelligence systems that help clinical and operations teams move prior-authorization requests through review faster and with fewer manual touchpoints.",
     highlights: [
-      "Contributed to prior-authorization workflow tooling that helps operations and clinical teams track submissions from intake through payer response.",
-      "Led a team of 6 developers, building OCR and structured-data-extraction pipelines to pull key fields from clinical and payer documents into a consistent, reviewable format.",
+      "Designing and deploying an AI-native prior-authorization product to partner hospitals using RAG and agentic workflows on clinical documentation, projected to decrease manual workflow and patient denial rates by 45%.",
+      "Making technical tradeoffs between prompting, retrieval, and system design approaches to optimize output quality.",
       "Developed FastAPI backend services and endpoints supporting document ingestion, extraction review, and downstream submission workflows.",
-      "Implemented PDF generation for outbound prior-authorization packets and payer submissions.",
+      "Architecting cloud infrastructure on Azure to support end-to-end data pipelines and handle API management at scale.",
       "Designed and deployed LLM-powered product features using RAG (retrieval-augmented generation) to help clinical teams quickly summarize and understand payer responses.",
       "Worked with Docker, PostgreSQL, MinIO (object storage), and Label Studio to support HIPAA compliant data pipelines, storage, and labeling for model development.",
-      "Collaborated with clinical operations, product, and engineering stakeholders to translate manual review processes into reliable software.",
+      "Connecting with investors and hospital teams at local events to raise money and iterate product based on feedback."
     ],
     stack: [
       "Python",
@@ -67,11 +67,11 @@ export const experience: ExperienceEntry[] = [
     location: "New York City, NY",
     dateRange: "April 2023 — May 2024",
     summary:
-      "A 13-month Break Through Tech AI Fellowship combining a 12-week machine learning foundations curriculum with real-world applied placements, including an AI/ML Fellow role at Google.",
+      "A 13-month Break Through Tech AI Fellowship combining a 12-week machine learning foundations curriculum with real-world applied placements, including an AI/ML Engineer role at Google.",
     highlights: [
       "Selected from 1,500+ applicants for the fellowship, which opened with a 12-week intensive machine learning foundations curriculum.",
       "Gained professional experience working with companies on real-life machine learning projects, including data collection, model development, and deployment.",
-      "Fellowship placements included an AI/ML Fellow role at Google and an applied machine learning project with the New York Botanical Garden (NYBG).",
+      "Fellowship placements included an AI/ML Engineer role at Google and an applied machine learning project with the New York Botanical Garden (NYBG).",
     ],
     stack: [
       "Python",
@@ -86,16 +86,17 @@ export const experience: ExperienceEntry[] = [
     category: "technical",
   },
     {
-    role: "AI/ML Fellow",
+    role: "AI/ML Engineer",
     company: "Google",
     location: "New York City, NY",
     dateRange: "August 2023 — December 2023",
     summary:
-      "Worked with 5 engineers to develop a supervised deep-learning regression model — using a convolutional neural network (CNN) architecture and Scikit-Learn-based analysis, built with TensorFlow and Keras — predicting CTR for Google's ad campaigns using abstracted data.",
+      "Worked with 5 engineers to develop a supervised deep-learning regression model using a convolutional neural network (CNN) architecture and Scikit-Learn-based analysis, built with TensorFlow and Keras — predicting CTR for Google's ad campaigns using abstracted data.",
     highlights: [
-      "Achieved an 85% accuracy rate using Python libraries including TensorFlow, Keras, and Scikit-Learn.",
-      "Implemented testing, validation, and hyperparameter tuning to optimize model performance.",
-      "Partnered with stakeholders to define problem scope and determine appropriate ML approaches.",
+      "Locally trained, tested, and validated a predictive model on Google’s user data, projected to increase revenue by 14%.",
+      "Achieved an 80% accuracy rate using Python libraries including TensorFlow, Keras, and Scikit-Learn.",
+      "Fine-tuned hyperparameters and engineered model features to increase initial model accuracy from 75% to 80%.",
+      "Presented findings to stakeholders at Google regarding how data was handled during the process and next steps."
     ],
     stack: [
       "Python",

@@ -95,7 +95,7 @@ export const projects: Project[] = [
       problem:
         "Clinical and payer documents arrive as scans or exports with inconsistent layouts. Useful information is trapped in image or unstructured text form, which blocks any automated downstream processing.",
       myRole:
-        "Built the OCR extraction, field-parsing, and schema-validation pipeline on top of a Docker-based MinIO/PostgreSQL/Label Studio project scaffold, implemented parsing logic, confidence-based review routing, and the structured-output validation.",
+        "Managed a team of 6 engineers to develop the OCR extraction, field-parsing, and schema-validation pipeline on top of a Docker-based MinIO/PostgreSQL/Label Studio project scaffold, implemented parsing logic, confidence-based review routing, and the structured-output validation.",
       approach:
         "Combine OCR with layout and rule-based parsing to extract key fields, then route low-confidence extractions to a labeling and review step so the pipeline improves over time rather than failing silently.",
       architecture:

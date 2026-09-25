@@ -42,7 +42,7 @@ export default function About() {
         <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-[4px] border hairline sm:grid-cols-2">
           <AboutStat label="Based in" value="New York City" />
           <AboutStat label="Focus" value="Applied AI & ML Engineering" />
-          <AboutStat label="Current role" value="ML & Data Engineer, Caldarium" />
+          <AboutStat label="Current role" value="AI Product Engineer, Caldarium" />
           <AboutStat label="Education" value="B.S. Computer Science, Lehman College" />
         </dl>
       </div>

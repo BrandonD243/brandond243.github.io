@@ -20,7 +20,7 @@ export default function Hero() {
           welcome to my webpage!
         </p>
         <p className="mt-6 max-w-[52ch] text-[15px] leading-relaxed sm:text-base" style={{ color: "#4B4B4B" }}>
-          I&apos;m a Machine Learning &amp; Data Engineer + artistic creative who builds ethical AI
+          I&apos;m an AI Product Engineer + artistic creative who builds ethical AI
           systems designed for the human experience.
         </p>
 
