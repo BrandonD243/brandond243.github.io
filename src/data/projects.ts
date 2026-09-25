@@ -121,7 +121,7 @@ export const projects: Project[] = [
         "Picking an OCR engine involved lots of benchmarking to determine which would provide the most accurate output, and because we decided to use OCR locally, we didn't have to send scans to a third-party OCR. HIPAA-compliance was also a challenge, because we had to find a way to encrypt or abstract PHI. Hashing was the easy option, but a hash can't be visually reviewed or corrected — a reviewer needs something that looks like a real name or date of birth to judge whether the parser got it right. We abstracted real fields into synthetic, realistic-looking values for anything a person or downstream process would see, and restored the original data only when output was returned to the source system. That trade-off cuts both ways: unlike an irreversible hash, the synthetic-to-real mapping is itself a sensitive asset that has to be tightly access-controlled and audited, since anyone who can read it can reverse the substitution.",
       hasDiagramPlaceholder: true,
       diagramUrl: "/projects/healthcare-ocr-architecture.svg",
-      screenshotUrl: "/projects/document-parsing-ocr.jpeg",
+      screenshotUrl: "/projects/document-parsing-ocr.jpg",
     },
   },
 ];
