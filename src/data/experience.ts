@@ -22,9 +22,9 @@ export const experience: ExperienceEntry[] = [
     location: "Albany, NY (Remote)",
     dateRange: "September 2025 — Present",
     summary:
-      "Building eco-friendly healthcare document-intelligence systems that help clinical and operations teams move prior-authorization requests through review faster and with fewer manual touchpoints.",
+      "Building healthcare document-intelligence systems that help clinical and operations teams move prior-authorization requests through review faster and with fewer manual touchpoints.",
     highlights: [
-      "Designing and deploying an AI-native prior-authorization product to partner hospitals using RAG and agentic workflows on clinical documentation, projected to decrease manual workflow and patient denial rates by 45%.",
+      "Designing an AI-native prior-authorization product to partner hospitals using RAG and agentic workflows on clinical documentation, projected to decrease manual workflow and patient denial rates by 45%.",
       "Making technical tradeoffs between prompting, retrieval, and system design approaches to optimize output quality.",
       "Developed FastAPI backend services and endpoints supporting document ingestion, extraction review, and downstream submission workflows.",
       "Architecting cloud infrastructure on Azure to support end-to-end data pipelines and handle API management at scale.",

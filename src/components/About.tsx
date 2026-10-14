@@ -11,7 +11,7 @@ export default function About() {
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-4 text-[15px] leading-relaxed" style={{ color: "#4B4B4B" }}>
           <p>
-            Hello! I'm a computer scientist based in New York City with a focus on
+            Hello! I'm a computer scientist based in New York City with a background in
             data, machine learning, and AI ethics.
           </p>
           <p>
@@ -21,21 +21,22 @@ export default function About() {
             performance artistry and engineering.
           </p>
           <p>
-            It currently shows up the most in my career the more I'm building and working with
-            automated systems. One of my favorite things about building AI is how unpredictable
+            It shows up the most in my career the more I'm building and working with
+            automated systems. One of my favorite things about building AI is how versatile
             it is when it comes to its current outputs and its implications for the future.
             Where we started is nowhere near where we are now, and the technology only keeps
             getting smarter. Being a contributor to these technological developments is like
-            raising a small child and watching it evolve in real-time. The unpredictability
+            raising a small child and watching it evolve in real-time. The versatility
             and power of these systems are growing beyond our human capabilities, and yet they
             somehow circle back to being human just like us.
           </p>
           <p>
             I use my background to help people of all industries, but where I find it most interesting
-            is when I use it to help the pillars of our communities. Healthcare professionals, teachers, 
-            and small business owners are only a few examples of people who keep our world spinning.
-            I want to come up with solutions that can help maximize their potential and enhance their
-            impact on the people they serve.
+            is when I use it to help the pillars of my community like healthcare professionals, teachers, 
+            and local, small business owners. As someone who's born and raised in the Bronx, I have first-hand
+            experience with the challenges that come with being a part of an underserved community.
+            That's why I want to come up with solutions that can help maximize their potential and enhance their
+            impact on the people they serve. 
           </p>
         </div>
 
