@@ -8,7 +8,7 @@ export default function About() {
         title="Who Am I?"
         description=""
       />
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-4 text-[15px] leading-relaxed" style={{ color: "#4B4B4B" }}>
           <p>
             Hello! I'm a computer scientist based in New York City with a background in
