@@ -2,13 +2,15 @@ export default function SectionHeading({
   eyebrow,
   title,
   description,
+  spacingClassName = "mb-12",
 }: {
   eyebrow: string;
   title: string;
   description?: string;
+  spacingClassName?: string;
 }) {
   return (
-    <div className="mb-12 max-w-[60ch]">
+    <div className={`${spacingClassName} max-w-[60ch]`}>
       <p className="eyebrow mb-3">{eyebrow}</p>
       <h2
         className="text-2xl sm:text-3xl"
